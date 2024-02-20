@@ -1,0 +1,37 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.333;
+  color: #000000;
+
+  @media (max-width: 425px) {
+    font-size: 7.529vw;
+  }
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+
+  @media (max-width: 1310px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 1024px) {
+    column-gap: 3.906vw;
+  }
+
+  @media (max-width: 425px) {
+    row-gap: 9.412vw;
+  }
+}

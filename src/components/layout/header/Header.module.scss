@@ -1,0 +1,171 @@
+.header {
+  padding: 40px 0;
+  border-bottom: 1px solid #f6f6f6;
+
+  @media (max-width: 768px) {
+    padding: 5.208vw 0;
+  }
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 425px) {
+    gap: 3.529vw;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+
+    @media (max-width: 425px) {
+      width: 11.765vw;
+      height: 11.765vw;
+    }
+  }
+}
+
+.logoInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.333;
+  color: #181818;
+
+  @media (max-width: 425px) {
+    font-size: 5.647vw;
+  }
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.333;
+  color: #7b7b7b;
+
+  @media (max-width: 768px) {
+    width: 40vw;
+    overflow: hidden;
+    font-size: 2.083vw;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 8.853px;
+  }
+}
+
+.cart {
+  padding: 10px 20px;
+  display: none;
+  gap: 10px;
+  border-radius: 30px;
+  background-color: #fe5f1e;
+
+  @media (max-width: 768px) {
+    gap: 0;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.cartActive {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background-color: #fe5f1e;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f24701;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      cursor: pointer;
+      background-color: #f24701;
+    }
+  }
+
+  @media (hover: none) {
+    &:hover {
+      cursor: auto;
+      background-color: #fe5f1e;
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: 0;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.price {
+  font-family: "Comic Sans MS", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.333;
+  color: white;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.line {
+  display: block;
+  width: 1.8px;
+  height: 25px;
+  background-color: rgb(255, 255, 255, 0.1);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.count {
+  font-family: "Comic Sans MS", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.333;
+  color: white;
+}
